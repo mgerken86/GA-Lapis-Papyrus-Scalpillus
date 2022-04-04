@@ -7,6 +7,8 @@ const player = {
   let playerScore = 0;
   let computerScore = 0;
   showScores();
+
+  const choices = ["Lapis", "Papyrus", "Scalpellus"];
   
   //makes the scores visible. called throughout the game to update scores
   function showScores(){
@@ -14,8 +16,7 @@ const player = {
     document.getElementById('computerScoreDiv').innerText = ("Computer Score: 0" + computerScore);
   };
   
-  const choices = ["Lapis", "Papyrus", "Scalpellus"];
-  
+
   //HTML buttons assigned to a choice
   document.getElementById('lapis').onclick = function(){
     player.currentChoice = "Lapis";
@@ -26,8 +27,6 @@ const player = {
   document.getElementById('scalpellus').onclick = function(){
     player.currentChoice = "Scalpellus";
   };
-  
-  
   
   
   //randomly chooses one of 3 computer choices
@@ -96,7 +95,7 @@ const player = {
     displayResult("And the winner is...")
   }
   
-  //creates new 'p' that displays the outcome is the HTML span in Results class
+  //creates new 'p' that displays the outcome; is the HTML span in Results class
   function displayResult(outcome){ 
     const resultText = document.createElement('p');
     resultText.innerText = outcome;
