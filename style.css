@@ -1,81 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Cinzel:wght@600&family=Kanit&family=Londrina+Shadow&family=Merriweather+Sans:ital,wght@1,300&family=Mukta&family=Poller+One&family=Satisfy&display=swap');
+
+html {
+  height: 100%;
+}
+
 body {
-    background-color: #87CEEB;
-    background-image: url(https://images.unsplash.com/photo-1588614959060-4d144f28b207?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3486&q=80);
-    background-size: 1920px 1200px;
-    background-position: center center;
-    background-repeat: none;
-    text-align: center;
-    font-size: 40px;
-    font-weight: bold;
-    color: white;
-    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-  }
+  font-family: 'Cinzel', serif;
+  background-color: #87CEEB;
+  background-size: cover;
+  background: url(https://images.unsplash.com/photo-1588614959060-4d144f28b207?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3486&q=80 ) no-repeat center center fixed;
+  background-size: 1920px 1200px;
+  background-position: center center;
+  background-repeat: none;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  padding: 0;
+  margin: 0;
+  border: 3px solid white;
+}
+
+.header {
+
+}
+
+h1 {
+  font-size: 100px;
+  color: #ff5c33;
+  margin: 30px 0 -40px;
+  text-shadow: -3px 0 white, 0 3px #660022, 3px 0 #660022, 0 -3px white;
+  font-weight: bolder;
+}
+
+h2 {
+  text-shadow: -2px 0 #ff5c33, 0 2px #660022, 2px 0 #660022, 0 -2px #ff5c33;
+}
+
+.rulesContainer {
+  border: 3px solid white;  
+}
+
+h3 {
+  margin: -20px;
+  background-color: #660022;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  border: 3px solid white;
+  display: inline;
+  padding: 10px 22px;
+  border-radius: 30px;
+}
+
+p span {
+  font-size: 52px;
+  background-color: #660022;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  border: 3px solid white;
+  padding: 10px 22px;
+  border-radius: 30px;
+  display: inline-block;
+}
+
+#finalDisplay {
+  font-size: 50px;
+  background-color: #660022;
+  border: 3px solid white;
+}
+
+button {
+  font-size: 32px;
+  font-weight: bolder;
+  padding: 6px 22px;
+  margin: 8px 10px 34px ;
+  background-color: #ff5c33;
+  color: white;
+  border: 3px solid black;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+  box-shadow: 4px 6px 10px black;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #87CEEB;
+}
+
+#lapis {
+  padding: 6px 50px;
+}
+
+#papyrus {
+  padding: 6px 40px;
+}
+
+#resetButton {
+  padding: 60px 20px;
+  font-size: 40px;
+}
+
+button img {
+  height: 80px;
+  width: 80px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
+  border: 2px solid black;
+  box-shadow: 2px 3px 6px black;
+}
+
+.results span {
+  font-size: 36px;
+  font-weight: bolder;
+  color: white;
+  background-color: #660022;
+  border: 3px solid white;
+  padding: 10px 22px;
+  border-radius: 30px;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 3px solid white;
+}
+
+.scoreboard div {
+  margin: 5px 20px;
+  padding: 10px;
+  font-size: 60px;
+  text-shadow: -2px 0 #ff5c33, 0 3px #660022, 3px 0 #660022, 0 -2px #ff5c33;
+}
+
+.scoreboard span {
+  border: 6px double white;
+  padding: 2px 20px;
+  background-color: #660022;
+  text-shadow: none;
+  border-radius: 20px;
+  display: inline-block;
+  width: 70px;
+  justify-content: center;
   
-  h1 {
-    font-size: 100px;
-    color: #ff5c33;
-    margin: 30px 0 -40px;
-    text-shadow: -3px 0 white, 0 3px black, 3px 0 black, 0 -3px white;
-    font-weight: bolder;
-  }
-  
-  h2 {
-    text-shadow: -2px 0 #ff5c33, 0 2px black, 2px 0 black, 0 -2px #ff5c33;
-  }
-  
-  h3 {
-    margin: -20px;
-    color: #ff5c33;
-    text-shadow: -2px 0 white, 0 2px black, 2px 0 black, 0 -2px white;
-  }
-  
-  p span {
-    font-size: 52px;
-    color: #ff5c33;
-    text-shadow: -2px 0 white, 0 2px black, 2px 0 black, 0 -2px white;
-  }
-  
-  button {
-    font-size: 32px;
-    font-weight: bolder;
-    padding: 6px 22px;
-    margin: 8px 10px 34px ;
-    background-color: #ff5c33;
-    color: white;
-    border: 3px solid black;
-    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-  }
-  
-  button:hover {
-    background-color: #87CEEB;  
-  }
-  
-  #lapis {
-    padding: 6px 60px;
-  }
-  
-  #papyrus {
-    padding: 6px 40px;
-  }
-  
-  .results span{
-    font-size: 36px;
-    font-weight: bolder;
-    color: white;
-    background-color: #ff5c33;
-    border: 3px solid black;
-    padding: 10px 22px;
-  }
-  
-  .scoreboard {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-  }
-  .scoreboard div{
-    margin: 5px 20px;
-    padding: 10px;
-    font-size: 60px;
-    text-shadow: -2px 0 #ff5c33, 0 3px black, 3px 0 black, 0 -2px #ff5c33;
-  }
+}
+
+#playerScoreDiv, #computerScoreDiv {
+  border: 3px solid white;
+  background: rgba(238, 238, 238, .3);
+  border-radius: 25px;
+}
